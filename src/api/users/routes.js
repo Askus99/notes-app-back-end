@@ -9,21 +9,11 @@ const routes = (handler) => [
         path: '/users/{id}',
         handler: handler.getUserByIdHandler,
     },
-    // {
-    //     method: 'GET',
-    //     path: '/notes/{id}',
-    //     handler: handler.getNoteByIdHandler,
-    // },
-    // {
-    //     method: 'PUT',
-    //     path: '/notes/{id}',
-    //     handler: handler.putNoteByIdHandler,
-    // },
-    // {
-    //     method: 'DELETE',
-    //     path: '/notes/{id}',
-    //     handler: handler.deleteNoteByIdHandler,
-    // },
+    {
+        method: 'GET',
+        path: '/users',
+        handler: handler.getUsersByUsernameHandler,
+    },
 ];
 
 module.exports = routes;

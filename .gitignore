@@ -4,3 +4,4 @@ new_user_credentials.csv
 aws
 .env
 .prod.env
+src/api/uploads/file
